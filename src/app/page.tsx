@@ -148,6 +148,73 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Partner Logos Section */}
+      <section className="py-24 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+              Trusted by Leading Companies
+            </h2>
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+              We work with industry leaders across various sectors
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
+            {/* Benelli Global */}
+            <div className="group flex items-center justify-center p-6 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-105">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/BenelliGlobalPMS485Logo.NoTag.svg/200px-BenelliGlobalPMS485Logo.NoTag.svg.png"
+                alt="Benelli Global"
+                className="h-12 w-auto opacity-70 group-hover:opacity-100 transition-opacity filter brightness-0 invert"
+              />
+            </div>
+
+            {/* Boomi */}
+            <div className="group flex items-center justify-center p-6 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-105">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/70/Boomi-logo.svg"
+                alt="Boomi"
+                className="h-12 w-auto opacity-70 group-hover:opacity-100 transition-opacity filter brightness-0 invert"
+              />
+            </div>
+
+            {/* Boston Consulting Group */}
+            <div className="group flex items-center justify-center p-6 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-105">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/4/40/Boston_Consulting_Group_logo.svg"
+                alt="Boston Consulting Group"
+                className="h-12 w-auto opacity-70 group-hover:opacity-100 transition-opacity filter brightness-0 invert"
+              />
+            </div>
+
+            {/* Bose Institute */}
+            <div className="group flex items-center justify-center p-6 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-105">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/4/40/Bose_Institute_Emblem_%28Vectorized%29.svg"
+                alt="Bose Institute"
+                className="h-12 w-auto opacity-70 group-hover:opacity-100 transition-opacity filter brightness-0 invert"
+              />
+            </div>
+
+            {/* Bonefish Grill */}
+            <div className="group flex items-center justify-center p-6 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-105 col-span-2 md:col-span-1">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/4/40/Bonefish_Grill_Logo.svg"
+                alt="Bonefish Grill"
+                className="h-12 w-auto opacity-70 group-hover:opacity-100 transition-opacity filter brightness-0 invert"
+              />
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-gray-400 text-sm">
+              * Representative partner companies across our global network
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
