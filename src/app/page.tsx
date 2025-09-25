@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ArrowRight, Globe, Users, Target, Mail } from 'lucide-react'
+import { ArrowRight, Globe, Users, Target, Mail, Calendar, MapPin, Building2, Award } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -98,6 +98,102 @@ export default function Home() {
                 Advanced screening processes and deep industry knowledge ensure we connect the right talent with the right opportunities.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Us Section */}
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white/5">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              About Amhurst Global
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              Founded in 2009 in India, we&apos;ve grown from a local recruitment firm to a global talent solutions provider,
+              connecting exceptional professionals with world-class opportunities across three continents.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+            {/* Story Side */}
+            <div className="space-y-8">
+              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center mr-4">
+                    <Calendar className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-white">Our Journey</h3>
+                    <p className="text-blue-300">Since 2009</p>
+                  </div>
+                </div>
+                <p className="text-gray-300 leading-relaxed">
+                  What started as a vision in India has transformed into a global network. We began by understanding the unique challenges
+                  of talent acquisition in emerging markets and have since expanded our expertise worldwide.
+                </p>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-blue-500 rounded-lg flex items-center justify-center mr-4">
+                    <Globe className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-white">Global Reach</h3>
+                    <p className="text-green-300">Worldwide Service</p>
+                  </div>
+                </div>
+                <p className="text-gray-300 leading-relaxed">
+                  From our roots in India to serving clients across the UK, Middle East, and USA, we&apos;ve built a comprehensive
+                  understanding of diverse markets, cultures, and business landscapes.
+                </p>
+              </div>
+            </div>
+
+            {/* Stats Side */}
+            <div className="grid grid-cols-2 gap-6">
+              <div className="bg-gradient-to-br from-blue-600/20 to-purple-600/20 backdrop-blur-md rounded-2xl p-8 border border-white/20 text-center group hover:scale-105 transition-transform">
+                <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Calendar className="w-8 h-8 text-white" />
+                </div>
+                <div className="text-4xl font-bold text-white mb-2">15+</div>
+                <div className="text-gray-300">Years of Excellence</div>
+              </div>
+
+              <div className="bg-gradient-to-br from-green-600/20 to-teal-600/20 backdrop-blur-md rounded-2xl p-8 border border-white/20 text-center group hover:scale-105 transition-transform">
+                <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-teal-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <MapPin className="w-8 h-8 text-white" />
+                </div>
+                <div className="text-4xl font-bold text-white mb-2">3</div>
+                <div className="text-gray-300">Global Markets</div>
+              </div>
+
+              <div className="bg-gradient-to-br from-purple-600/20 to-pink-600/20 backdrop-blur-md rounded-2xl p-8 border border-white/20 text-center group hover:scale-105 transition-transform">
+                <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Building2 className="w-8 h-8 text-white" />
+                </div>
+                <div className="text-4xl font-bold text-white mb-2">500+</div>
+                <div className="text-gray-300">Partner Companies</div>
+              </div>
+
+              <div className="bg-gradient-to-br from-orange-600/20 to-red-600/20 backdrop-blur-md rounded-2xl p-8 border border-white/20 text-center group hover:scale-105 transition-transform">
+                <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Award className="w-8 h-8 text-white" />
+                </div>
+                <div className="text-4xl font-bold text-white mb-2">10K+</div>
+                <div className="text-gray-300">Successful Placements</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Mission Statement */}
+          <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 backdrop-blur-md rounded-3xl p-12 border border-white/20 text-center">
+            <h3 className="text-3xl font-bold text-white mb-6">Our Mission</h3>
+            <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+              To bridge the gap between exceptional talent and extraordinary opportunities, creating meaningful connections that drive
+              both individual success and organizational growth across global markets.
+            </p>
           </div>
         </div>
       </section>
