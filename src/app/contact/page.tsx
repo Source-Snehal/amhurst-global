@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
+import AmhurstLogo from '@/components/AmhurstLogo'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
@@ -117,15 +118,8 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center">
-              <Link href="/" className="text-2xl font-bold text-white group cursor-pointer">
-                <span className="inline-block transition-all duration-500 hover:scale-110">
-                  <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 bg-clip-text text-transparent animate-pulse">
-                    Amhurst
-                  </span>
-                  <span className="ml-2 text-white font-light tracking-wider">
-                    Global
-                  </span>
-                </span>
+              <Link href="/">
+                <AmhurstLogo className="w-12 h-12" showText={true} />
               </Link>
             </div>
             <div className="hidden md:flex items-center space-x-8">
@@ -373,14 +367,7 @@ export default function Contact() {
       <footer className="bg-black/30 border-t border-white/20 py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <div className="mb-8">
-            <h3 className="text-2xl font-bold text-white mb-4">
-              <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
-                Amhurst
-              </span>
-              <span className="ml-2 font-light tracking-wider">
-                Global
-              </span>
-            </h3>
+            <AmhurstLogo className="w-10 h-10 mx-auto" showText={true} />
             <p className="text-gray-300 max-w-md mx-auto">
               Connecting exceptional talent with world-class opportunities across the UK, Middle East, and USA.
             </p>

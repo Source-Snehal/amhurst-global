@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { ArrowRight, Globe, Users, Target, Mail, Calendar, MapPin, Building2, Award } from 'lucide-react'
+import AmhurstLogo from '@/components/AmhurstLogo'
 
 export default function Home() {
   return (
@@ -9,16 +10,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center">
-              <div className="text-2xl font-bold text-white group cursor-pointer">
-                <span className="inline-block transition-all duration-500 hover:scale-110">
-                  <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 bg-clip-text text-transparent animate-pulse">
-                    Amhurst
-                  </span>
-                  <span className="ml-2 text-white font-light tracking-wider">
-                    Global
-                  </span>
-                </span>
-              </div>
+              <AmhurstLogo className="w-12 h-12" showText={true} />
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <Link href="/" className="text-white hover:text-blue-300 transition-colors">
@@ -332,14 +324,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="lg:col-span-2">
-              <h3 className="text-2xl font-bold text-white mb-4">
-                <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
-                  Amhurst
-                </span>
-                <span className="ml-2 font-light tracking-wider">
-                  Global
-                </span>
-              </h3>
+              <div className="mb-4">
+                <AmhurstLogo className="w-10 h-10" showText={true} />
+              </div>
               <p className="text-gray-300 mb-6 max-w-md">
                 Connecting exceptional talent with world-class opportunities across the UK, Middle East, and USA.
               </p>
