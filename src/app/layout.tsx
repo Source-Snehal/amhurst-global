@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://your-domain.com',
+    url: 'https://www.amhurst-global.com',
     siteName: 'Amhurst Global',
     title: 'Amhurst Global - Global Talent Solutions',
     description: 'Connecting exceptional talent with world-class opportunities across the UK, Middle East, and USA.',
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     images: ['/og-image.jpg'],
   },
   alternates: {
-    canonical: 'https://your-domain.com',
+    canonical: 'https://www.amhurst-global.com',
   },
 };
 
